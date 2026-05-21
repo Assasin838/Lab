@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #525659; 
+    background-color: #1a1a2e;
     display: flex;
     justify-content: center;
     padding: 40px 0;
@@ -15,24 +15,30 @@ body {
 .cv-container {
     width: 900px;
     min-height: 1160px;
-    background-color: #ffffff;
+    background-color: #16213e;
     display: flex;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 .sidebar {
     width: 35%;
-    background-color: #d8d2e8;
+    background-color: #0f3460;
     padding: 50px 30px;
-    color: #000;
+    color: #e0e0e0;
+    border-right: 3px solid #e94560;
 }
 
 .sidebar h2 {
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
     margin-top: 40px;
+    color: #e94560;
+    border-bottom: 1px solid #e94560;
+    padding-bottom: 8px;
 }
 
 .sidebar section:first-child h2 {
@@ -45,86 +51,116 @@ body {
 
 .sidebar ul li {
     margin-bottom: 10px;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     position: relative;
     padding-left: 15px;
+    color: #b0c4de;
 }
 
 .sidebar ul li::before {
-    content: '•';
+    content: '▸';
     position: absolute;
     left: 0;
+    color: #e94560;
 }
 
 .sidebar p {
-    font-size: 0.95rem;
-    line-height: 1.5;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #b0c4de;
+}
+
+.sidebar p strong {
+    color: #ffffff;
 }
 
 .main-content {
     width: 65%;
     padding: 60px 50px;
+    background-color: #16213e;
+    color: #e0e0e0;
 }
 
 header h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
     line-height: 1.1;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-weight: 800;
+    color: #ffffff;
+    text-shadow: 2px 2px 0px #e94560;
 }
 
 header h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-bottom: 30px;
-    font-weight: 700;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+    font-weight: 400;
+    color: #e94560;
 }
 
 .summary {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 0.95rem;
+    line-height: 1.7;
     margin-bottom: 40px;
     padding-bottom: 30px;
-    border-bottom: 1px solid #000; 
+    border-bottom: 1px solid #e94560;
+    color: #b0c4de;
 }
 
 .main-content h2 {
-    font-size: 1.2rem;
+    font-size: 0.85rem;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 25px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    color: #e94560;
+    border-bottom: 1px solid #0f3460;
+    padding-bottom: 8px;
 }
 
 .job {
     margin-bottom: 30px;
+    padding: 20px;
+    background-color: #0f3460;
+    border-radius: 8px;
+    border-left: 4px solid #e94560;
 }
 
 .job h3 {
-    font-size: 1.05rem;
+    font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
-    display: inline-block;
+    color: #ffffff;
+    margin-bottom: 6px;
 }
 
 .job .date {
-    font-size: 0.95rem;
-    color: #444;
-    margin-bottom: 15px;
+    font-size: 0.85rem;
+    color: #e94560;
+    margin-bottom: 12px;
 }
 
 .job p {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     line-height: 1.6;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
+    color: #b0c4de;
 }
 
 .job ul {
     margin-left: 20px;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     line-height: 1.5;
+    color: #b0c4de;
 }
 
+.job ul li {
+    margin-bottom: 6px;
+}
+
+.job ul li::marker {
+    color: #e94560;
+}
 .job ul li {
     margin-bottom: 8px;
 }
