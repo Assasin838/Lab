@@ -24,4 +24,3 @@ function Header({ isDark }) {
   )
 }
 export default Header
-export default Header
